@@ -1,10 +1,10 @@
 export type Absen = {
-    id: string;
-    hari: Date;
-    jamMulai: Date;
-    jamSelesai: Date;
-    keterangan: string;
-    lampiran: string;
+    id: string
+    hari: Date
+    jamMulai: Date | null
+    jamSelesai: Date | null
+    keterangan: string | null
+    lampiran: string | null
     tipe: string
 }
 
