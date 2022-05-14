@@ -8,11 +8,11 @@ export type Absen = {
     tipe: string
 }
 
-export interface AbsenI {
-    masuk: (absen: Absen) => void
-    keluar: (absen: Absen) => void
+export interface IAbsen {
+    masuk: (absen: Absen) => Promise<void>
+    keluar: (absen: Absen) => Promise<void>
 }
 
-export interface cutiI {
-    ajukan: (absen: Absen) => void
+export interface ICuti {
+    ajukan: (absen: Absen) => Promise<void>
 }
