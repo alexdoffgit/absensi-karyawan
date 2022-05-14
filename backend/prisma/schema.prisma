@@ -12,7 +12,7 @@ datasource db {
 
 model Absen {
   id String @id
-  hari DateTime @db.Date
+  hari DateTime @db.Date @unique
   jamMulai DateTime? @db.Timestamptz()
   jamSelesai DateTime? @db.Timestamptz()
   keterangan String? 
