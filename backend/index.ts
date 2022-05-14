@@ -1,7 +1,7 @@
 import express, { Application, Request, Response, NextFunction } from 'express';
 import dotnev from "dotenv";
 import { masuk } from "./endpoint/absen/masuk";
-import { Absensi } from "@prismapg/absen";
+import { Absensi } from "./adapter/prismapg/absen";
 
 dotnev.config()
 

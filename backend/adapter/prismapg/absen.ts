@@ -1,5 +1,5 @@
 import { PRISMA } from "./singleton";
-import { IAbsen, Absen as AbsenContract } from "@model/absen";
+import { IAbsen, Absen as AbsenContract } from "../../domain/model/absen";
 import { nanoid } from "nanoid";
 
 
