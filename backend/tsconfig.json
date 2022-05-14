@@ -6,7 +6,13 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "baseUrl": "./",
+    "paths": {
+      "@model/*": ["./domain/model/*"],
+      "@dto/*": ["./domain/dto/*"],
+      "@prismapg/*": ["./adapter/prismapg/*"]
+    }
   },
   "exclude": ["node_modules"]
 }
