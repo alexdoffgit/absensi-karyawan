@@ -8,5 +8,6 @@ export type AbsenMasukReq = {
 export type AbsenKeluarReq = {
     hari: string
     jamSelesai: string
+    tipe: string
 }
 
