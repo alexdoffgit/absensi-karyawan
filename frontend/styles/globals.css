@@ -1,3 +1,8 @@
+:root {
+  --primary: #246EB9;
+  --text-primary: #E3E6EA;
+}
+
 html,
 body {
   padding: 0;
