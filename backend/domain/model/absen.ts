@@ -9,10 +9,10 @@ export type Absen = {
 }
 
 export interface IAbsen {
-    masuk: (absen: Absen) => Promise<void>
-    keluar: (absen: Absen) => Promise<void>
+    masuk: (absen: Absen) => Promise<null>
+    keluar: (absen: Absen) => Promise<null>
 }
 
 export interface ICuti {
-    ajukan: (absen: Absen) => Promise<void>
+    ajukan: (absen: Absen) => Promise<null>
 }
