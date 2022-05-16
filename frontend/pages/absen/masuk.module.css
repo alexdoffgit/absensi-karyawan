@@ -34,4 +34,31 @@
     width: 394px;
     height: 336px;
     border: 1px solid rgba(0, 0, 0, 1);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.judul {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.ket {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    resize: none;
+}
+
+.tipe-absen {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.btn-group {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    display: flex;
+    justify-content: space-around;
 }

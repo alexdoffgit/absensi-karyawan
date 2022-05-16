@@ -32,7 +32,22 @@ export function Absen() {
       <TopNav />
       <div id="content" className={styles.content}>
         <div className={styles.box}>
-
+          <p className={styles.judul}>Keterangan</p>
+          <textarea 
+          name="keterangan" 
+          cols={20} 
+          rows={10} 
+          data-cy="keterangan"
+          className={styles.ket}>
+          </textarea>
+          <select name="tipe absen" data-cy="tipe absen" className={styles["tipe-absen"]}>
+            <option value="absen">Absen</option>
+            <option value="terlambat">Terlambat</option>
+          </select>
+          <div className={styles["btn-group"]}>
+            <button>Clock In</button>
+            <button>Clock Out</button>
+          </div>
         </div>
       </div>
     </div>
