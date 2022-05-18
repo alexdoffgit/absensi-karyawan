@@ -12,7 +12,3 @@ export interface IAbsen {
     masuk: (absen: Absen) => Promise<null>
     keluar: (absen: Absen) => Promise<null>
 }
-
-export interface ICuti {
-    ajukan: (absen: Absen) => Promise<null>
-}
