@@ -1,11 +1,11 @@
 export function server(path: string): string {
-    if(process.env.SERVER_URL) {
-        const baseUrl = process.env.SERVER_URL
+    if(process.env.NEXT_PUBLIC_SERVER_URL) {
+        const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL
         
         if(baseUrl.endsWith("/")) { 
 
             if(path.startsWith("/")) {
-                const trimmedPath = path.slice(1, path.length - 1)
+                const trimmedPath = path.slice(1, path.length)
 
                 return baseUrl + trimmedPath
             }
@@ -16,7 +16,7 @@ export function server(path: string): string {
         const urlWithSlash = baseUrl + "/"
 
         if(path.startsWith("/")) {
-            const trimmedPath = path.slice(1, path.length - 1)
+            const trimmedPath = path.slice(1, path.length)
 
             return urlWithSlash + trimmedPath
         }
