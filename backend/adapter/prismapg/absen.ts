@@ -58,7 +58,8 @@ export class Absensi implements IAbsen {
                     hari: absen.hari
                 },
                 data: {
-                    jamSelesai: absen.jamSelesai
+                    jamSelesai: absen.jamSelesai,
+                    tipe: absen.tipe
                 }
             })
 
