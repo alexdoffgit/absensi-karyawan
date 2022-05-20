@@ -1,7 +1,9 @@
 export interface FileGetter {
-    getFile: (path: string) => Promise<Blob|File|Buffer|string>
+    getFile: (path: string) => Promise<ReadableStream>
 }
 
 export interface FileStore {
-    storeFile: (path: string, file: Blob|File|Buffer|string, filename?: string) => Promise<null>
+    storeFile: (path: string, 
+        file: Blob|File|Buffer|string|ReadableStream, 
+        filename?: string) => Promise<null>
 }
